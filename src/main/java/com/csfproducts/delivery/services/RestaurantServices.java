@@ -26,7 +26,7 @@ public class RestaurantServices {
 	}  
 
 	//getting a specific record by using the method findById() of CrudRepository  
-	public Restaurant getdeliveryById(int id)   
+	public Restaurant getrestaurantById(int id)   
 	{  
 		try {
 				return RR.findById(id).get();
