@@ -36,9 +36,9 @@ public class RestaurantController {
 
 	//creating a get mapping that retrieves the detail of a specific book  
 	@GetMapping("/Restaurant/{restaurantid}")  
-	private Restaurant getDeliveries(@PathVariable("restaurantid") int restaurantid)   
+	private Restaurant getRestaurant(@PathVariable("restaurantid") int restaurantid)   
 	{  
-		return RS.getdeliveryById(restaurantid);  
+		return RS.getrestaurantById(restaurantid);  
 	}  
 
 
@@ -58,7 +58,7 @@ public class RestaurantController {
 
 	//creating put mapping that updates the book detail
 	//@CrossOrigin(origins = "*")
-	@PutMapping("/delivery")  
+	@PutMapping("/restaurant")  
 	private Restaurant update(@RequestBody  Restaurant r)   
 	{  
 		RS.saveOrUpdate(r);  
